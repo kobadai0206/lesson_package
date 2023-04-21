@@ -17,7 +17,6 @@
 package lesson1_20_22_dev;
 import lesson1_20_22_process.Theme2_process;
 
-
 public class Theme2 {
 	public static void main(String[] args) {
 		// インスタンスを作成して各メソッドを呼び出す

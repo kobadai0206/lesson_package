@@ -25,7 +25,7 @@ public class Theme2_process {
 	private String foodType = "和食";
 	private LocalDateTime now = LocalDateTime.now();
 
-	// 「こんにちは！」を表示するメソッド
+	// こんにちは！ここは日本です！を表示するメソッド
 	public void sayHello() {
 		System.out.println("こんにちは！ここは" + this.country + "です！");
 	}
@@ -40,7 +40,7 @@ public class Theme2_process {
 		System.out.println(this.food + "は" + this.foodType + "です");
 	}
 
-	
+	//	今の現在日時は2023/03/09 10:23:39ですを表示するメソッド
 	public void showCurrentTime() {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
 		String formatted = this.now.format(formatter);
