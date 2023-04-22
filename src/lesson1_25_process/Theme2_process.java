@@ -37,9 +37,12 @@ public class Theme2_process extends Status{
 	public void Statusset() {
 		// プレイヤー名をコンソールから受け取り、設定する
 		try (Scanner scanner = new Scanner(System.in)) {
-			System.out.print("名前：");//	 入力画面
-			String name = scanner.next(); //文字列の入力の受け取り
-			this.setName(name); // 名前にセット
+			//	入力画面
+			System.out.print("名前：");
+			//文字列の入力の受け取り
+			String name = scanner.next(); 
+			// 名前にセット
+			this.setName(name); 
 		}
 
 		// プレイヤーのステータスをランダムな値を設定

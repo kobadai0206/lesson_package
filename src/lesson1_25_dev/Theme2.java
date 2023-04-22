@@ -28,7 +28,9 @@ public class Theme2 {
 		// プレイヤーのステータスをインスタンス化
 		Theme2_process status = new Theme2_process();
 		
+		//	入力して、乱数をセットするメソッドを呼び出す
 		status.Statusset();
+		
 		// プレイヤーのステータスを表示する
 		System.out.println("こんにちは" + status.getName() + "さん");
 		System.out.println("ステータス");
