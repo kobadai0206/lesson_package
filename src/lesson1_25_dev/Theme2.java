@@ -31,7 +31,7 @@ public class Theme2 {
 		// プレイヤーのステータスをインスタンス化
 		Theme2_process status = new Theme2_process();
 		
-		//	ランダム関数をインスたん化
+		//	ランダム関数をインスタンス化
 		Random rnd = new Random();
 		
 		// プレイヤー名をコンソールから受け取り、設定する
@@ -41,19 +41,13 @@ public class Theme2 {
 			status.setName(name); // 名前にセット
 		}
 		
-		// プレイヤーのステータスをランダムな値を取得
-	    int hpValue = rnd.nextInt(1001) + 100;
-	    int mpValue = rnd.nextInt(1001) + 100;
-	    int attackValue = rnd.nextInt(1001) + 100;
-	    int speedValue = rnd.nextInt(1001) + 100;
-	    int protectValue =  rnd.nextInt(201) + 1;
 	    
 	    // プレイヤーのステータスをランダムな値を設定
-	    status.setHp(hpValue);
-	    status.setMp(mpValue);
-	    status.setAttack(attackValue);
-	    status.setSpeed(speedValue);
-	    status.setProtect(protectValue);
+	    status.setHp(rnd.nextInt(1001) + 100);
+	    status.setMp(rnd.nextInt(1001) + 100);
+	    status.setAttack(rnd.nextInt(1001) + 100);
+	    status.setSpeed(rnd.nextInt(1001) + 100);
+	    status.setProtect(rnd.nextInt(1001) + 100);
 	    
 	    
 	 // プレイヤーのステータスを表示する
