@@ -46,43 +46,22 @@ import lesson1_26_28_process.Theme2_process;
 
 public class Theme2 {
 	public static void main(String[]args) {
+		// インスタンス化
 		Theme2_process process = new Theme2_process();
-		String[] animals;
+		
+		// 入力画面
 		try (Scanner scanner = new Scanner(System.in)) {
-			System.out.print("コンソールに文字を入力してください");//	 入力画面
-			String animalArray = scanner.next(); //文字列の入力の受け取り
-			animals = animalArray.split(",");
+			System.out.print("コンソールに文字を入力してください");
+			//文字列の入力の受け取り
+			String animalArray = scanner.next(); 
+			// 入力された文字列を","で分割し、配列に格納し
+			process.setAnimal(animalArray.split(","));
 		}
+		
+		// Animalsメソッドの呼び出し
+		process.Animals();
 
-		for(int i = 0; i < animals.length; i++) {
-			String[] animal = animals[i].split(":");
-			process.setAnimal(animal[0]);
-			process.setAnimal(Float.parseFloat(animal[1]));
-			process.setAnimal(Integer.parseInt(animal[2]));
-			System.out.println("動物名：" + process.getAnimal());
-			System.out.println("体長：" + process.getHeight() + "m");
-			System.out.println("速度：" + process.getSpeed() + "km/h");
-			switch(process.getAnimal()){
-			  case "ライオン":
-			    System.out.println("学名：パンテラ レオ");
-			    break;
-			  case "ゾウ":
-			    System.out.println("学名：ロキソドンタ・サイクロティス");
-			    break;
-			  case "パンダ":
-			    System.out.println("学名：アイルロポダ・メラノレウカ");
-			    break;
-			  case "チンパンジー":
-				  System.out.println("学名：パン・トゥログロディテス");
-				  break;
-			  case "シマウマ":
-				  System.out.println("学名：チャップマンシマウマ");
-				  break;
-			  case "インコ":
-				  System.out.println("学名：不明");
-			}
-			System.out.println();
-		}
+
 
 
 	}
