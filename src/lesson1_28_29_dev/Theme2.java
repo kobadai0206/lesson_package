@@ -36,6 +36,23 @@
  */
 package lesson1_28_29_dev;
 
+import lesson1_28_29_process.Theme2_process;
+
 public class Theme2 {
+	public static void main(String[]args) {
+		// インスタンス化
+		Theme2_process process = new Theme2_process();
+		
+		//	InputScannerメソッドを呼び出し戻り値を受けとる
+		int[] ids = process.InputScanner();
+		
+		//	InputSortメソッドを呼び出し戻り値を受けとる
+		String InputSort = process.InputSort();
+		
+		//	Processメソッドを実行して引数を指定
+		process.Process(InputSort, ids);
+
+
+	}
 
 }
