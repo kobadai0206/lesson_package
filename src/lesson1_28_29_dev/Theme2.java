@@ -44,13 +44,13 @@ public class Theme2 {
 		Theme2_process process = new Theme2_process();
 		
 		//	InputScannerメソッドを呼び出し戻り値を受けとる
-		int[] ids = process.InputScanner();
+		int[] ids = process.inputScanner();
 		
 		//	InputSortメソッドを呼び出し戻り値を受けとる
-		String InputSort = process.InputSort();
+		String InputSort = process.inputSort();
 		
 		//	Processメソッドを実行して引数を指定
-		process.Process(InputSort, ids);
+		process.process(InputSort, ids);
 
 
 	}

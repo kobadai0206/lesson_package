@@ -48,7 +48,7 @@ public class Theme2_process extends Prefecture {
 	public Theme2_process() {
 	}
 
-	public int[] InputScanner() {
+	public int[] inputScanner() {
 		// 数値の入力を促すメッセージを表示
 		System.out.print("コンソールにカンマ区切りで数値を入力してください：");
 		// コンソールからの入力を受け取り
@@ -59,7 +59,7 @@ public class Theme2_process extends Prefecture {
 		return ids;
 	}
 
-	public String InputSort() {
+	public String inputSort() {
 		// ソートの方法を入力させるメッセージを表示
 		System.out.print("『昇順』または『降順』を入力してください：");
 		//	入力の文字列を取得
@@ -68,7 +68,7 @@ public class Theme2_process extends Prefecture {
 	}
 
 
-	public void Process(String sort, int[] ids) {
+	public void process(String sort, int[] ids) {
 		// 昇順でソートする場合の処理
 		if ("昇順".equals(sort)) {
 			// 配列を昇順にソート

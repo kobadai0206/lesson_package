@@ -34,7 +34,7 @@ public class Theme2_process extends Status{
 
 	}
 
-	public void Statusset() {
+	public void statusSet() {
 		// プレイヤー名をコンソールから受け取り、設定する
 		try (Scanner scanner = new Scanner(System.in)) {
 			//	入力画面
@@ -46,11 +46,11 @@ public class Theme2_process extends Status{
 		}
 
 		// プレイヤーのステータスをランダムな値を設定
-		this.setHp(rnd.nextInt(1001) + 100);
-		this.setMp(rnd.nextInt(1001) + 100);
-		this.setAttack(rnd.nextInt(1001) + 100);
-		this.setSpeed(rnd.nextInt(1001) + 100);
-		this.setProtect(rnd.nextInt(1001) + 100);
+		this.setHp(rnd.nextInt(1001) + 10);
+		this.setMp(rnd.nextInt(1001) + 10);
+		this.setAttack(rnd.nextInt(1001) + 10);
+		this.setSpeed(rnd.nextInt(1001) + 10);
+		this.setProtect(rnd.nextInt(101) + 10);
 	}
 
 

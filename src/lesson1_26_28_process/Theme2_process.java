@@ -59,7 +59,7 @@ public class Theme2_process extends animalStatus {
 	}
 	
 	// Animalsメソッドはanimalsフィールドに格納された動物の情報を出力するメソッド
-	public void Animals() {
+	public void animals() {
 		// animals配列の要素数分、以下の処理を繰り返す
 		for(int i = 0; i < animals.length; i++) {
 			// animals配列のi番目の要素を":"で分割して、animal配列に代入

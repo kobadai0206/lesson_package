@@ -59,7 +59,7 @@ public class Theme2 {
 		}
 		
 		// Animalsメソッドの呼び出し
-		process.Animals();
+		process.animals();
 
 
 
