@@ -31,9 +31,9 @@ public class Person {
 
 	// 情報を表示するメソッド
 	public void print(double bmi) {
-		System.out.println("「名前は" + this.lastName + "です」,");
-		System.out.println("「BMIは" + bmi + "です」");
-		System.out.println("「年は" + this.age + "才です」");
+		System.out.println("名前は" + this.lastName + "です");
+		System.out.println("BMIは" + bmi + "です");
+		System.out.println("年は" + this.age + "才です");
 
 		System.out.println("合計" + totalPersons + "人です");
 	}

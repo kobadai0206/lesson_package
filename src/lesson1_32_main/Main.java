@@ -13,10 +13,6 @@ class Main{
 		// person2の情報を出力
 		person2.print();
 		
-		// それぞれのインスタンスのcountフィールドの値を出力
-		System.out.println("合計" + person1.count + "人です");
-		System.out.println("合計" + person2.count + "人です");
-		
 		// それぞれのインスタンスのprintCountメソッドを呼び出して合計人数を出力
 		person1.printCount();
 		person2.printCount();
