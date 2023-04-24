@@ -13,7 +13,9 @@ public class Person{
 	// Personクラスのコンストラクタ,引数を指定
 	public Person(String firstName, int age, double height, double weight){
 		// 呼び出されるごとにインクリメント
-	    Person.count++;
+		//　人数が変になるのでコメントアウト
+		// Person.count++;
+		
 		// フィールドに仮引数の値を代入
 		this.firstName = firstName;
 		this.age = age;
