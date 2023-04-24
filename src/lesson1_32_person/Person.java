@@ -7,7 +7,7 @@ public class Person{
 	public double height;
 	public double weight;
 	// 人数の合計をカウントするフィールド
-	public int count = 0;
+	public static int count = 0;
 	
 	// コンストラクタを定義（仮引数）
 	public Person(String name, int age, double height, double weight){
@@ -18,7 +18,7 @@ public class Person{
 		this.weight = weight;
 		
 		// インスタンスが生成されたら人数の合計をインクリメント
-		this.count++;
+		count++;
 	}
 	
 	// BMIを計算するメソッド
@@ -33,7 +33,7 @@ public class Person{
 	}
 	
 	// 人数の合計を出力するメソッド
-	public void printCount() {
-		System.out.println("合計" + this.count + "人です");
+	public static void printCount() {
+		System.out.println("合計" + count + "人です");
 	}
 }
