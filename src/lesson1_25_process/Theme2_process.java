@@ -52,19 +52,22 @@ public class Theme2_process extends Status{
 		this.setSpeed(rnd.nextInt(1001) + 10);
 		this.setProtect(rnd.nextInt(101) + 10);
 	}
-
-
 }
 
 class Status {
 	// 名前
 	private String name;
 	// ステータス
-	private int hp;// HP
-	private int mp;// MP
-	private int attack;// 攻撃力
-	private int speed;// 素早さ
-	private int protect;// 防御力
+	// HP
+	private int hp;
+	// MP
+	private int mp;
+	// 攻撃力
+	private int attack;
+	// 素早さ
+	private int speed;
+	// 防御力
+	private int protect;
 
 	// 名前の設定
 	public void setName(String name) {

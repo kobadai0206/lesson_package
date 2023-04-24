@@ -24,11 +24,11 @@ package lesson1_25_dev;
 import lesson1_25_process.Theme2_process;
 
 public class Theme2 {
-	public static void main(String[]args) {
+	public static void main(String[] args) {
 		// プレイヤーのステータスをインスタンス化
 		Theme2_process status = new Theme2_process();
 		
-		//	入力して、乱数をセットするメソッドを呼び出す
+		// 入力して、乱数をセットするメソッドを呼び出す
 		status.statusSet();
 		
 		// プレイヤーのステータスを表示する
@@ -43,5 +43,4 @@ public class Theme2 {
 		System.out.println("さあ冒険に出かけよう！");
 
 	}
-
 }
