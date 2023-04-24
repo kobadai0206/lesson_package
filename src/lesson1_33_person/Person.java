@@ -12,17 +12,21 @@ public class Person{
 	
 	// Personクラスのコンストラクタ,引数を指定
 	public Person(String firstName, int age, double height, double weight){
-		//	フィールドに仮引数の値を代入
+		// 呼び出されるごとにインクリメント
+	    Person.count++;
+		// フィールドに仮引数の値を代入
 		this.firstName = firstName;
 		this.age = age;
 		this.height = height;
 		this.weight = weight;
 	}
 	
-	public Person(String lastName){
-		 // このメソッドが呼ばれた時にクラス変数countをインクリメント
-		Person.count++;
-		this.lastName = lastName;
+	public Person(String firstName, String lastName, int age, double height, double weight){
+	    this(firstName, age, height, weight);
+	    // フィールドに仮引数の値を代入
+	    this.lastName = lastName;
+	    // 呼び出されるごとにインクリメント
+	    Person.count++;
 	}
 	
 	// fullNameメソッドの定義
